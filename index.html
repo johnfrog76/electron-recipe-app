@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Electron Recipe App</title>
+    <!-- bootstrap base -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/recipeas.css">
+    <link rel="stylesheet" href="./css/table-styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="loading" style="display: none"><i class="fa fa-cog fa-spin"></i> loading...</div>
+    <div class="modal fade recipe-modal" id="recipe-modal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="recipe-container">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade login-modal" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="login-container">
+                <form class="form-signin" role="form" method="post">
+                    <h4 class="form-signin-heading">Please sign in</h4>
+                    <input type="text" class="form-control" name="access_login" placeholder="User" required="" autofocus="">
+                    <input type="password" class="form-control" name="access_password" placeholder="Password" required="">
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Log In</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+<div id="center">
+    <div id="pageContent">
+    <div id="header">
+    	<a href="#"><img src="images/logo_peas.png" id="logo" alt="logo"></a>
+        <div id="nav">
+            <ul id="topPrimary"></ul>
+            <ul id="topUser">
+                <li class="logout" style="display: none"><a href="#">LOG OUT</a> &nbsp;/&nbsp;</li>
+                <li class="login active"><a href="#">LOG IN</a> &nbsp;/&nbsp;</li>
+                <li><a href="#">SIGN UP</a></li>
+            </ul>
+        </div><!--end 'nav'-->
+    </div><!--end 'header'-->
+    <div id="bluebar"></div><!--end 'bluebar'-->
+    <div id="main">
+        <div id="left">
+            <img id="banner" src="images/homeHeader.png" alt="banner">
+            <div id="tableHolder"></div><!--end .tableHolder-->
+        </div><!--end .left -->
+        <div id="right">
+            <div id="welcome">Welcome
+                <span class="session">--</span>
+            </div><!--end 'welcome'-->
+            <div id="sidebar" style="height: 96px;">
+                <img src="images/target_icon.png" id="targetIcon" alt="">
+                <div id="copy">
+                <h6>Comments</h6>
+                <p>Both of the childeren in my family eat this banana bread as fast as I can make it!<br><span>John</span></p>
+                <p>I like to use all whole wheat flour and add 15 minutes to bake time.<br><span>Fred</span></p>
+                </div><!--end 'copy'-->
+            </div><!--end 'sidebar'-->
+            <div id="carrots"></div><!--end 'carrots'-->
+        </div><!--end 'right'-->
+</div><!--end 'main'-->
+<div id="orangebar"></div><!--end 'orangebar'-->
+</div>
+</div>
+<script>window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.min.js');</script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="./js/jquery.modifyTables.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

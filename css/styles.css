@@ -1,0 +1,139 @@
+table {
+    width: 100%;
+}
+
+.btn-info, .login-modal .btn-primary {
+    background-color: #9492AC !important;
+    border-color:#9492AC !important;
+}
+.modal-content {
+    background-color: #F2F2F2;
+}
+.recipe-container {
+    text-align: left;
+    font-size: 13px;
+}
+.recipe-container ul li {
+    margin: .25em 0;
+}
+
+.recipe-container ol li {
+    margin: .5em 0;
+    width: 400px;
+}
+
+.recipe-container h4 {
+    text-align: center;
+    color: #2C285D;
+}
+
+body.logged-in #banner {
+    display: none;
+}
+body.logged-in #welcome {
+    display: block;
+}
+
+#banner {
+    display: block;
+}
+#welcome {
+    display: none;
+}
+
+body.logged-in #tableHolder {
+    margin-bottom: 10px;
+}
+
+body.modal-open div#loading {
+    top: 162px;
+    border-radius: 4px;
+}
+
+#loading {
+    background-color: #349A46;
+    color: #fff;
+    width: 110px;
+    margin: 0 auto;
+    position: fixed;
+    left: 44%;
+    border-radius: 0 0 4px 4px;
+    padding: 5px 0;
+    z-index: 100000;
+    font-size: 1.3em;
+}
+
+.recipe-container {
+    min-height: 200px;
+}
+
+.recipe-container > div {
+    position: relative;
+    height: 50px;
+    width: 101px;
+    float: right;
+}
+
+table {
+    margin-bottom: 50px;
+}
+
+span.rate-recipe {;
+    position: absolute;
+    margin: -5px 0 0 10px;
+    width: 40px;
+    height: 27px;
+    background-image: url(../images/rating.png);
+    background-repeat: no-repeat;
+    background-position: -40px 0px;
+    text-indent: -2000em;
+}
+.rate-recipe.oneCarrot {
+	background-position: -27px 0px !important;
+}
+.rate-recipe.twoCarrot {
+	background-position: -18px 0px !important;
+}
+.rate-recipe.threeCarrot {
+	background-position: -10px 0px !important;
+}
+.rate-recipe.fourCarrot {
+	background-position: 0px 0px !important;
+}
+
+.favorite {
+    min-height: 290px;
+}
+
+.login-container {
+    padding: 15px;
+}
+
+table .empty-text {
+    color: #999;
+    text-align: center;
+}
+
+.modal-content {
+    background: #E5F2E7 url(../images/sidebar_bg.png) repeat-x -126px -60px;
+}
+
+.login-container input {
+    margin-bottom: 10px;
+}
+
+ul.comments li {
+    list-style-type: none;
+    width: 400px;
+}
+ul.comments li span.user {
+    color: #999;
+    display: block;
+}
+.modal-content h5 {
+    font-size: 15px;
+    color: #2C285D;
+    margin: 15px 20px;
+    background: url(../images/target_icon.png) no-repeat 0 0;
+    padding: 4px 0 4px 28px;
+}

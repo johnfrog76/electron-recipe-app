@@ -1,0 +1,21 @@
+{
+  "name": "electron-recipe-app",
+  "version": "1.0.0",
+  "description": "Electron recipe app using johnwtest.com recipe API - http://johnwtest.com/recipe/api",
+  "main": "main.js",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "bootstrap": "^3.3.6",
+    "datatables": "^1.10.9",
+    "font-awesome": "^4.5.0"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^0.35.2",
+    "electron-debug": "^0.5.1"
+  },
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "John Webster",
+  "license": "ISC"
+}
