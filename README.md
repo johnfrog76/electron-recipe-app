@@ -6,4 +6,4 @@ Steps to install
 -----------
 * npm install
 * npm start
-# electron-recipe-app
+
